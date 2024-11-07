@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+}
+h1{
+    color: rgb(249, 244, 244);
+    background-color: rgb(65, 64, 64);
+    width: auto;
+    height: 150px;
+    font-style:arial;
+    font-size: 30px;
+    padding: 15px;
+    margin: 0;   
+}
+nav{    
+    display: flex;    
+}
+a{
+    color: white;
+    padding: 25px;
+    font-size: 25px; 
+    text-decoration: none;
+    width: 500px;
+    background-color: rgb(10, 10, 10);
+    text-align: center;     
+}
+main{
+    display: flex;
+    font-size: 20px;
+}
+.box1{
+    background-color: darkgray;
+    width: 1200px;
+    height: 300px;
+}
+footer{
+    margin: 0;
+    background-color: rgb(50, 49, 49);
+    width: auto;
+    height: 200px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+}
