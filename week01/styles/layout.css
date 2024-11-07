@@ -24,14 +24,15 @@ a{
     text-align: center;     
 }
 main{
-    display: flex;
+    display: grid;
     font-size: 20px;
+    grid-template-columns: 70% 30%;
+    height: 400px;
 }
 .box1{
-    background-color: darkgray;
-    width: 1200px;
-    height: 300px;
+    background-color: darkgray;    
 }
+
 footer{
     margin: 0;
     background-color: rgb(50, 49, 49);
