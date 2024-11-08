@@ -14,6 +14,7 @@ body{
     align-content: center;
     width: auto; 
     height: 100px;  
+    font-family: sans-serif;
 }
 /*Class applied to wdd 131*/
 .wdd131{
@@ -78,7 +79,7 @@ section{
     text-align: center;
     font-size: 33px;
     padding: 15px;
-    font-optical-sizing: auto;
+    font-family: sans-serif;
 }
 
 /*Class applied to img1*/
@@ -107,7 +108,13 @@ main{
 .city{
     text-align: center;
     font-size: 20px;
-} 
+    
+}
+/*Class applied to Popayan, Colombia*/ 
+.cityp{
+    font-family: sans-serif;
+    font-size: 30px;
+}
 /* class applied to flag and country description*/
 .flag{
     display: flex;
@@ -121,6 +128,9 @@ main{
 .refer:hover{
     color: rgb(184, 4, 136);
  }
+hr{
+    width:700px;
+}
 
 /*css applied to footer*/
 footer{
