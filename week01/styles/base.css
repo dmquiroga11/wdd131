@@ -52,7 +52,7 @@ nav a{
 }
 
 nav a:hover{   
-   background-color: rgb(187, 210, 251);
+   background-color: rgb(4, 73, 193);
    
 }
 /*css applied to section*/
@@ -127,7 +127,7 @@ main{
 }
 
 .refer:hover{
-    background-color: rgb(187, 210, 251)
+    background-color: rgb(195, 217, 254)
  }
 hr{
     width:700px;
