@@ -1,0 +1,78 @@
+header{
+    display: flex;
+    margin:0px;
+    background-color: rgb(207, 143, 15);
+}
+h1{
+    margin: 20px;
+    font-size: 50px;
+    color: bisque;
+}
+nav{
+    align-content: center;    
+    margin-left: auto;
+}
+nav a{
+   padding: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: bisque;
+}
+main{
+    display: grid;   
+}
+
+h2{
+   justify-self: center;
+   font-size: 40px;
+   color: rgb(113, 75, 29);
+   font-family: "Lora", serif;
+}
+img{
+    height: 200px;
+    width: 350px;
+
+}
+/*Class applied for img*/
+.box1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;    
+    gap: 0px;
+}
+figcaption{
+    text-align: center;
+    font-size: 26px;
+    color: rgb(177, 118, 46);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    margin-top: 20px;
+    background-color: chocolate;
+     height: 120px;   
+     flex-direction: column;
+     justify-content: center; 
+     align-items: center;   
+     font-size: 26px;
+     width: auto;
+     height: 120px;
+     color: rgb(230, 204, 174);
+     
+}
+/*Class applied to first p>*/
+.box2{
+    height: 10px;
+   margin-top: 20px;    
+}
+/*Class applied to second p>*/
+.box3{
+    height: 5px;
+    margin: 0;
+    
+
+}
+
+
