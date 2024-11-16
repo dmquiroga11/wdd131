@@ -8,9 +8,21 @@ h1{
     font-size: 50px;
     color: bisque;
 }
+
 nav{
     align-content: center;    
     margin-left: auto;
+}
+.open-menu{
+    display:none;
+
+}
+/* Class applied to nav list*/
+.list{
+    display:flex;
+    list-style-type: none;
+   
+
 }
 nav a{
    padding: 50px;
