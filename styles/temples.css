@@ -18,28 +18,32 @@ nav a{
     font-size: 25px;
     color: bisque;
 }
+a:hover{
+    color:rgb(91, 58, 2)
+}
 main{
-    display: grid;   
+    display: grid; 
+    width: 1300px;  
+    justify-self: center;
+    grid-template-columns: auto;   
 }
 
 h2{
+    width: 200px;
+    height: 50px;
    justify-self: center;
    font-size: 40px;
    color: rgb(113, 75, 29);
-   font-family: "Lora", serif;
+   font-family: "Lora", serif;   
+}
+figure{
+    display: grid;
 }
 img{
     height: 200px;
     width: 350px;
+}
 
-}
-/*Class applied for img*/
-.box1{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;    
-    gap: 0px;
-}
 figcaption{
     text-align: center;
     font-size: 26px;
@@ -52,13 +56,13 @@ footer{
     display: flex;
     margin-top: 20px;
     background-color: chocolate;
-     height: 120px;   
+     height: 110px;   
      flex-direction: column;
      justify-content: center; 
      align-items: center;   
      font-size: 26px;
      width: auto;
-     height: 120px;
+     height: 150px;
      color: rgb(230, 204, 174);
      
 }
@@ -71,8 +75,27 @@ footer{
 .box3{
     height: 5px;
     margin: 0;
-    
-
 }
+/*Class applied for img*/
+.box1{
+    display: grid;    
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

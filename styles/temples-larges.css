@@ -1,0 +1,78 @@
+@media screen  and (max-width:2000px){
+
+    header{
+        background-color:  rgb(207, 143, 15);
+        width: auto;
+        color: bisque;
+    }
+
+    h1{
+        white-space: nowrap;
+    }
+    h2{
+        justify-self: center;
+        text-align: center;       
+    }
+    
+    main{
+        width: 100%;
+        display: grid;        
+    }
+    .box1{
+        display: grid;    
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);    
+        gap: 0px;
+
+    }
+    figure{
+        width: 80%;        
+    }
+}
+  
+@media (max-width: 1000px) {
+    header{
+        background-color:  rgb(207, 143, 15);
+        width: auto;
+        color: bisque;
+    }
+    h2{    
+        text-align: center;  
+                 
+    }
+    .box1 {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    main{
+        width: 100%;
+    }
+    figure{        
+        width: auto;    }
+
+}
+@media (max-width: 500px) {
+    header{
+        background-color:  rgb(207, 143, 15);
+        width: auto;
+        color: bisque;
+    }
+    h2{       
+        justify-self: center;
+        text-align: center;        
+    }
+    .box1 {
+        grid-template-columns: 1fr; 
+    }
+    main{
+        width: 100%;
+    }
+    figure{       
+        width: auto;
+    }
+}
+
+
+
+
+
+
