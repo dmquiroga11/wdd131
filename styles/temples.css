@@ -49,11 +49,12 @@ h2{
    font-family: "Lora", serif;   
 }
 figure{
-    display: grid;
+    display: grid;   
 }
 img{
+    
     height: 200px;
-    width: 350px;
+    width: 400px;
 }
 
 figcaption{
