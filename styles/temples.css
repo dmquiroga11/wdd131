@@ -37,7 +37,8 @@ main{
     display: grid; 
     width: 1300px;  
     justify-self: center;
-    grid-template-columns: auto;   
+    grid-template-columns: auto;
+    margin:0;   
 }
 
 h2{
@@ -53,7 +54,7 @@ figure{
 }
 img{
     
-    height: 200px;
+    height: 250px;
     width: 400px;
 }
 
@@ -63,6 +64,7 @@ figcaption{
     color: rgb(177, 118, 46);
     font-family: "Cormorant Garamond", serif;
     font-weight: bold;
+   
 }
 
 footer{
