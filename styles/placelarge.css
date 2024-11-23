@@ -1,12 +1,76 @@
-/*@media (min-width: 400px) {
-    .hero {
-      
-    }
+@media screen and (max-width:500px) {
+  .hero {
+    background-image: url('images/canguro.webp');
   }
-  
-  @media (min-width: 401px) and (max-width: 2000px) {
-    .hero {
-     
-    }
-  }*/
+  header{
+    width: auto;
+    height: 120px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  body{
+    width: 0 auto;
+    margin: 0; 
+    padding: 0;    
+    box-sizing: border-box;
+    height: 100px;
+  }
+  main{
+   
+    background-color:var(--tertiary-color);
+    width: auto;
+    height: 690px;
+    display: grid; 
+         
+  }
+  h2{
+    background-color: var(--fifth-color);
+    text-align: center;
+    font-size: 50px;
+  }
+  .iconweat{
+    display: grid;
+    flex-direction: column;
+  }
+  .icon{
+    width: 200px;
+    height: 200px;
+    bottom:50px;
+    left: 15%;
+  }
+  .hero{
+    width: auto;
+    margin: 0%;
+  }
+  .hero1{
+    background-color: white;
+    color: var(--quaternary-color);
+    top:40px;
+    text-align: center;
+  }
+  .hero2{
+    position: relative;
+    background-color:var(--fifth-color);
+    color: var(--quaternary-color);
+    top: 30px;
+    text-align: center;
+    left: 15%;
+  }
+
+  footer{
+    width: auto;
+    height: 150px;
+    position: relative;
+    top:1000px;
+    margin:0;
+    font-size: 17px;    
+  }
+}
+
+
+
+
+
+
   

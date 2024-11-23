@@ -4,7 +4,9 @@
 :root{
     --primary-color:beige;
     --secondary-color:rgb(2, 2, 80);
-    --tertiary-color:rgb(181, 1, 1);    
+    --tertiary-color:rgb(181, 1, 1); 
+    --quaternary-color:black; 
+    --fifth-color:white;      
     --main-font-family: 'Calibri';
       
       
