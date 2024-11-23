@@ -20,6 +20,9 @@ header{
     font-size: 40px;
    width: 1500px;
 }
+h1{
+    font-family: "Roboto", sans-serif;
+}
 
 main{
     width: 1500px;
@@ -96,6 +99,9 @@ li{
     position: relative;
     bottom:90px;
     left:60%;
+}
+.h2weat::after{
+    content: url("C:\Users\Walter Quiroga\OneDrive\Desktop\wdd131\images\sunny_icon.svg");
 }
 
 
