@@ -101,7 +101,7 @@ li{
     left:60%;
 }
 .h2weat::after{
-    content: url("wdd131/imgplace/sunny_icon.svg");
+    content: url("imgplace/sunny_icon.svg");
 }
 
 
