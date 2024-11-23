@@ -4,28 +4,99 @@
 :root{
     --primary-color:beige;
     --secondary-color:rgb(2, 2, 80);
-    --tertiary-color:rgb(181, 1, 1);
+    --tertiary-color:rgb(181, 1, 1);    
+    --main-font-family: 'Calibri';
+      
+      
 }
 header{
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding:10px;
+    height: 170px;
+    align-content: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+   width: 1500px;
 }
 
 main{
-    background-image: url("images/AUSTRALIAlarge.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: grid; 
-    background-color: aqua;
+    width: 1500px;
+    height: 1000px;       
+    background-color: var(--tertiary-color);
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;    
 }
-.heroimg{
-    width: 1000px;
-    height: 995px;
-    background-color: aqua;
+
+h2{
+    padding: 10px;
+    background-color: var(--tertiary-color);
+    width: 280px;
+    left:5%;
+    position: relative;  
 }
+/*Class aplied to Data*/
+
+.hero1{
+    position: relative;
+    background-color:var(--secondary-color);
+    width: 350px;
+    opacity: 0.89;
+    bottom:820px;
+    color: var(--primary-color);
+    font-size: 22px;
+    font-family: var(--main-font-family);
+    left:5%;
+    
+}
+.h2weat{
+    width: 250px;
+}
+
+/*class aplied to weather*/
+.hero2{
+    position: relative;   
+    background-color: var(--secondary-color);
+    width: 300px;   
+    opacity: 0.9;
+    bottom:800px;
+    color: var(--primary-color);
+    font-size: 22px;
+    left:75%;
+    font-family: var(--main-font-family);
+}
+footer{
+    background-color: var(--tertiary-color);
+    width: 1500px;
+    height: 150px;
+    color: var(--primary-color);
+    font-size: 25px;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    display: flex;   
+    
+}
+footer p{    
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+.li2hero{
+    display:grid;    
+    position: relative;
+    bottom: 70px;     
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom:90px;
+    left:60%;
+}
+
+
+
 
 
