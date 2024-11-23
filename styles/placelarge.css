@@ -1,8 +1,5 @@
 @media screen and (max-width:500px) {
-  .hero {
-    background-image: url('images/canguro.webp');
-  }
-  header{
+   header{
     width: auto;
     height: 120px;
   }
