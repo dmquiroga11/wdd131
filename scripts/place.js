@@ -1,18 +1,24 @@
+    const temperature = 10;
+    const windSpeed = 14;
 
-const temperature =27;
-const windSpeed = 14;
+    function windChill(temperature, windSpeed) {
+        return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+    }
 
+   
+    function updateWindChill() { 
+        const windChillValue = windChill(temperature, windSpeed); 
+        const windChillElement = document.getElementById("windChillResult");
+        
+        if (temperature <= 10 && windSpeed > 4.8) {
+            windChillElement.innerText = `${windChillValue.toFixed(2)}°C`;    
+        } else {
+            windChillElement.innerText = "N/A";
+        }
+    }
 
-function windChill(temperature, windSpeed) {
-    const windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
-    return windChill;
-}
-function updateWindChill() {
-     const windChillValue = windChill(temperature, windSpeed); 
-     const windChillElement = document.getElementById("windChillResult"); 
-     windChillElement.innerText = `${windChillValue.toFixed(2)}°C`; } 
-
-document.addEventListener("DOMContentLoaded", updateWindChill);
+   
+    document.addEventListener("DOMContentLoaded", updateWindChill);
 
 
 
