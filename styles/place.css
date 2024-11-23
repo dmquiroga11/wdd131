@@ -101,7 +101,7 @@ li{
     left:60%;
 }
 .h2weat::after{
-    content: url("C:\Users\Walter Quiroga\OneDrive\Desktop\wdd131\images\sunny_icon.svg");
+    content: url("images/sunny_icon.svg");
 }
 
 
