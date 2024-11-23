@@ -1,0 +1,31 @@
+
+
+
+:root{
+    --primary-color:beige;
+    --secondary-color:rgb(2, 2, 80);
+    --tertiary-color:rgb(181, 1, 1);
+}
+header{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding:10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+main{
+    background-image: url("images/AUSTRALIAlarge.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid; 
+    background-color: aqua;
+}
+.heroimg{
+    width: 1000px;
+    height: 995px;
+    background-color: aqua;
+}
+
+
