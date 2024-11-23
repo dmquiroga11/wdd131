@@ -71,7 +71,7 @@ footer{
     background-color: var(--tertiary-color);
     width: 1500px;
     height: 150px;
-    color: var(--primary-color);
+    color: var(--fifth-color);
     font-size: 25px;
     flex-direction: column;
     justify-content: center; 
