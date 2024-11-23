@@ -93,15 +93,15 @@ li{
     position: relative;
     bottom: 70px;     
 }
-.icon{
-    width: 70px;
-    height: 70px;
+.icon{    
     position: relative;
     bottom:90px;
     left:60%;
+    width: 70px;
+    height: 70px;
 }
 .h2weat::after{
-    content: url("imgplace/sunny_icon.svg");
+    background-image: url("../imgplace/sunny_icon.svg");
 }
 
 
