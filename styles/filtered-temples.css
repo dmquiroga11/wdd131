@@ -1,0 +1,103 @@
+header{
+    display: flex;
+    margin:0px;
+    background-color: rgb(81, 76, 172);
+}
+h1{
+    margin: 20px;
+    font-size: 50px;
+    color: bisque;
+}
+
+nav{
+    align-content: center;    
+    margin-left: auto;
+}
+.open-menu{
+    display:none;
+
+}
+/* Class applied to nav list*/
+.list{
+    display:flex;
+    list-style-type: none;
+   
+
+}
+nav a{
+   padding: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: bisque;
+}
+a:hover{
+    color:rgb(91, 58, 2)
+}
+main{
+    display: grid; 
+    width: 1300px;  
+    justify-self: center;
+    grid-template-columns: auto;
+    margin:0;   
+}
+
+h2{
+    width: 200px;
+    height: 50px;
+   justify-self: center;
+   font-size: 40px;
+   color: rgb(113, 75, 29);
+   font-family: "Lora", serif;   
+}
+figure{
+    display: grid;   
+}
+img{
+    
+    height: 250px;
+    width: 400px;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 26px;
+    color: rgb(177, 118, 46);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+   
+}
+
+footer{
+    display: flex;
+    margin-top: 20px;
+    background-color: chocolate;
+     height: 110px;   
+     flex-direction: column;
+     justify-content: center; 
+     align-items: center;   
+     font-size: 26px;
+     width: auto;
+     height: 150px;
+     color: rgb(230, 204, 174);
+     
+}
+/*Class applied to first p>*/
+.box2{
+    height: 10px;
+   margin-top: 20px;    
+}
+/*Class applied to second p>*/
+.box3{
+    height: 5px;
+    margin: 0;
+}
+/*Class applied for img*/
+.box1{
+    display: grid;    
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 0px;
+}
+
+
+
