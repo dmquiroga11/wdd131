@@ -62,6 +62,7 @@
     .temple p {
         font-size: 1.2em;
         margin: 5px 0;
+        color: var(--tertiary-color);
         
     }
     
