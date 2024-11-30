@@ -42,9 +42,7 @@ a:hover{
 main{
     display: grid; 
     width: 1300px;  
-    justify-self: center;
-    grid-template-columns: auto;
-    margin:0;   
+   
 }
 
 h2{
@@ -53,25 +51,9 @@ h2{
    justify-self: center;
    font-size: 40px;
    color: var(--tertiary-color);
-   font-family: "Lora", serif;   
-}
-figure{
-    display: grid;   
-}
-img{
-    
-    height: 250px;
-    width: 400px;
+   font-family: "Roboto", sans-serif;  
 }
 
-figcaption{
-    text-align: center;
-    font-size: 26px;
-    color: var(--tertiary-color);
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-   
-}
 
 footer{
     display: flex;
@@ -103,6 +85,14 @@ footer{
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);    
     gap: 0px;
+}
+@keyframes ocult {
+    0% {
+        opacity: 0;    
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
