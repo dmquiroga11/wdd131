@@ -12,8 +12,8 @@ setInterval(updateTime, 1000);
 updateTime();
 
 const nav = document.querySelector("#nav");
-const open = document.querySelector("#open");
-const close = document.querySelector("#close");
+const open = document.querySelector("#openmenu");
+const close = document.querySelector("#closemenu");
 
 open.addEventListener("click",()=>{
     nav.classList.add("visible");

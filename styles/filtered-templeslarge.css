@@ -108,7 +108,7 @@
 }
 @media (max-width: 500px) {
     header{
-        background-color:  rgb(66, 83, 134);
+        background-color:  rgb(25, 30, 48);
         width: auto;
         color: var(--secondary-color);
     }
