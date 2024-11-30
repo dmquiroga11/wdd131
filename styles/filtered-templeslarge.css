@@ -31,7 +31,7 @@
     .templescont{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        opacity: 0;
+        
         animation: ocult 0.5s forwards;        
     }
     .temple {              
@@ -43,7 +43,7 @@
         max-width: 400px;
         text-align: center;
         background-color: var(--quaternary-color);
-        opacity: 0.9;
+        
     }
     
     .temple img {
