@@ -32,7 +32,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         opacity: 0;
-        animation: ocult 2s forwards;        
+        animation: ocult 0.5s forwards;        
     }
     .temple {              
         
@@ -100,7 +100,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         opacity: 0;
-        animation: ocult 2s forwards;        
+        animation: ocult 0.5s forwards;        
     }
     
 
@@ -183,7 +183,7 @@
         display: grid;
         grid-template-columns: 1fr;
         opacity: 0;
-        animation: ocult 2s forwards;        
+        animation: ocult 0.1s forwards;        
     }
 }
 
