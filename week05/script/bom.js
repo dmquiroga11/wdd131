@@ -1,30 +1,48 @@
-const input = document.querySelector("#favchap");
-const button = document.querySelector("button");
-const list = document.querySelector("#list"); 
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.querySelector("#favchap");
+  const button = document.querySelector("button");
+  const list = document.querySelector("#list"); 
 
-button.addEventListener("click", function() {
-  if (input.value.trim() !== '') {
-    const myItem = input.value;
-    input.value = ''; 
+  let chaptersArray = getChapterList() || [];
 
-    // Crear nuevos elementos
-    const listItem = document.createElement("li");
-    const listText = document.createElement("span");
-    const listBtn = document.createElement("button");
+  button.addEventListener("click", function() {
+      if (input.value !== '' && !chaptersArray.includes(input.value)) {
+          displayList(input.value);
+          chaptersArray.push(input.value); 
+          setChapterList(); 
+          input.value = ''; 
+          input.focus();
+      }
+  });
 
-    listText.textContent = myItem;
-    listBtn.textContent = 'Eliminar';
-
-    
-    listItem.appendChild(listText);
-    listItem.appendChild(listBtn);
-    list.appendChild(listItem);
-
-    listBtn.addEventListener('click', () => {
-      list.removeChild(listItem);
-    });
-
-
-    input.focus();
+  function displayList(item) {
+      const listItem = document.createElement("li");
+      const deleteButton = document.createElement("button"); 
+      listItem.textContent = item; 
+      deleteButton.textContent = "❌"; 
+      deleteButton.classList.add("delete");
+      listItem.append(deleteButton); 
+      list.append(listItem); 
+      deleteButton.addEventListener('click', () => {
+          list.removeChild(listItem); 
+          deleteChapter(item); // Use `item` directly
+          input.focus();
+      });
   }
+
+  function setChapterList() {
+      localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
+  }
+
+  function getChapterList() {
+      return JSON.parse(localStorage.getItem('myFavBOMList')) || [];
+  }
+
+  function deleteChapter(chapter) {
+      chaptersArray = chaptersArray.filter(item => item !== chapter);
+      setChapterList();
+  }
+
+  // Llenar la lista al cargar la página
+  chaptersArray.forEach(chapter => displayList(chapter));
 });
