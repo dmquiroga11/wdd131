@@ -1,11 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Form</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Activity practice Week 05. Diana Quiroga">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/formlarge.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <section>
+             <form action="review.html" method="get">
+
+                <div class="lab1">
+                    <label for="product" class="labname"><strong>Product Name</strong></label>
+                    <select class="choose" name="product" id="product" required>
+                        <option value="" disabled selected>Choose a Product...</option>
+                    </select>
+                </div>
+                <div class="lab2">
+                    <label for="rating" class="labname"><strong>Overall Rating</strong></label>
+                    <div>
+                        <div>
+                            <div class="star">&star;</div>
+                            <input type="radio" name="overall" id="overall1" value="level1" required>
+                            <label for="overall1"><span class="radiobut"></span></label>
+                        </div>
+                        <div>
+                            <div class="star">&star;&star;</div>
+                            <input type="radio" name="overall" id="overall2" value="level2" required>
+                            <label for="overall2"><span class="radiobut"></span></label>
+                        </div>
+                        <div>
+                            <div class="star">&star;&star;&star;</div>
+                            <input type="radio" name="overall" id="overall3" value="level3" required>
+                            <label for="overall3"><span class="radiobut"></span></label>
+                        </div>
+                        <div>
+                            <div class="star">&star;&star;&star;&star;</div>
+                            <input type="radio" name="overall" id="overall4" value="level4" required>
+                            <label for="overall4"><span class="radiobut"></span></label>
+                        </div>
+                        <div>
+                            <div class="star">&star;&star;&star;&star;&star;</div>
+                            <input type="radio" name="overall" id="overall5" value="level5" required>
+                            <label for="overall5"><span class="radiobut"></span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="lab3">
+                    <label for="date" class="labname"><strong>Date of Installation</strong></label>
+                    <label class="labdate"><input type="date" id="instdate" name="instdate" required></label>
+                </div>
+                <div class="lab4">
+                    <label for="ask" class="labname"><strong>Which features did you find useful in the product?</strong></label>
+                    <div class="checkp">(Check all that apply)</div>
+                    <div class="divcheck">
+                        <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                        <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+                        <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                        <label><input type="checkbox" name="desing" value="yes">Design</label>
+                    </div>
+                </div>
+                <div class="lab5">
+                    <div class="optext">
+                        <label for="written" class="labname"><strong>Review</strong></label>
+                        <div class="opcolor">(Optional)</div>
+                    </div>
+                    <label ><textarea class="text1" name="reviewtext" id="reviewtext"></textarea></label>
+                </div>
+
+                <div class="lab6">
+                    <div class="optext">                                              
+                        <label for="name" class="labname"><strong>Your Name</strong></label>
+                        <div class="opcolor">(Optional)</div>  
+                    </div>
+                    <label ><textarea class="text2"name="name" id="name"></textarea></label>
+                </div>
+
+                <div class="buttom">
+                    <input class="buttom1" type="submit" value="Post Review">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="box2">©2024 🌺 Diana Quiroga 🌺 Colombia</p>
+        <p class="box3">Last modification: <span id="lastModified"></span></p>
+        <p><span id="currentTime"></span></p>
+    </footer>
     
 </body>
 </html>
