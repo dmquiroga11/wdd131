@@ -8,13 +8,11 @@
 }
 @media screen  and (max-width:2000px){
 
-header{
-    background-color: var(--primary-color);
-    width: auto;
-    color:var(--secondary-color);
-}
+
 h1{
-    font-size: 70px;       
+    font-size: 70px;
+    height: 100px;
+    padding: 10px;         
 }
 main{
     width: auto;
@@ -165,20 +163,13 @@ footer{
 
 
 @media (max-width: 500px) {
+   
 
-header{
-    background-color: var(--primary-color);
-    width: auto;
-    color: var(--secondary-color);    
-    display: flex;
-    margin: 0px;
-    justify-content: center;
-}
-    
-h1 {
-    margin: 20px;
-    font-size: 50px;
-    color: var(--secondary-color);
+h1{   
+    width: 450px;
+    height: 80px;      
+    font-size: 50px;    
+    padding: 10px;    
 }
     
 main{
@@ -186,7 +177,7 @@ main{
 }
     
 form{
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: var(--quaternary-color);
     width: 480px;
 }
@@ -320,7 +311,7 @@ margin: 0;
     
 footer{
     display: flex;
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: var(--primary-color);
     height: 110px;   
     flex-direction: column;

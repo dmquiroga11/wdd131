@@ -9,10 +9,12 @@ body, html {
     overflow-x: hidden; 
 }
 
-header {
+h1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     display: flex;
     margin: 0px;
-    justify-content: center;
+    justify-content: center;    
     font-family: var(--family-font1);  
 }
 .labname{
