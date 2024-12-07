@@ -29,8 +29,6 @@ h1 {
 input[type="radio"] {
     display: none;
 }
-
-
 .radiobut {
     width: 30px;
     height: 30px;
@@ -68,8 +66,10 @@ input[type="date"] {
 }
 
 input[type="checkbox"]{
+    margin-right: 10px;
     width: 30px;
-    height: 30px;    
+    height: 30px;
+       
 }
 footer{
     display: flex;
