@@ -4,21 +4,42 @@
     --tertiary-color: rgb(6, 0, 0);
     --quaternary-color: rgb(248, 218, 221);
 }
+
+
 body{
     background-color: var(--quaternary-color);
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+   
 }
+
 h1{
     background-color: var(--primary-color);
     color:var(--secondary-color);
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     height: 100px;
+    align-content: center;
+    margin-top: 0;
+}
+main { 
+    height: 490px;
     align-content: center;
 }
 p{
     font-size: 40px;
     text-align: center;
 }
+
 .footerp{
     font-size: 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 100px;
+    align-content: center;
+    margin-bottom: 0;
+}
+.counterp{
+    font-size: 26px;
 }

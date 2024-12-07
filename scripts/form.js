@@ -1,17 +1,21 @@
-const lastModified = document.querySelector("#lastModified");
-lastModified.textContent = document.lastModified;
 
-const currentTime = document.querySelector("#currentTime");
+document.addEventListener('DOMContentLoaded', () => {
+  const lastModified = document.querySelector("#lastModified");
+  if (lastModified) {
+      lastModified.textContent = document.lastModified;
+  }
 
-function updateTime() {
-    const now = new Date();
-    currentTime.textContent = now.toLocaleTimeString();
-}
+  const currentTime = document.querySelector("#currentTime");
+  if (currentTime) {
+      function updateTime() {
+          const now = new Date();
+          currentTime.textContent = now.toLocaleTimeString();
+      }
+      setInterval(updateTime, 1000);
+      updateTime();
+  }
 
-setInterval(updateTime, 1000);
-updateTime();
-
-const products = [
+  const products = [
     {
       id: "fc-1888",
       name: "flux capacitor",
@@ -37,9 +41,34 @@ const products = [
       name: "warp equalizer",
       averagerating: 5.0
     }
-  ]; 
+  ]
 
-    const selectElement = document.getElementById('product');
-    products.forEach(product => { const option = document.createElement('option');
-    option.value = product.name; option.textContent = product.name;
-    selectElement.appendChild(option); });
+  const selectElement = document.getElementById("product");
+  if (selectElement) {
+      products.forEach(product => {
+          const option = document.createElement("option");
+          option.value = product.name;
+          option.textContent = product.name;
+          selectElement.appendChild(option);
+      });
+  }
+
+  
+  const counterElement = document.getElementById('counter');
+  if (counterElement) {      
+      let reviewCount = parseInt(localStorage.getItem('reviewCount')) || 0;      
+      reviewCount++;
+      localStorage.setItem('reviewCount', reviewCount);      
+      counterElement.textContent = 'Completed Reviews: ' + reviewCount;
+  }
+});
+
+
+
+
+
+
+
+    
+  
+  

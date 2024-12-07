@@ -27,7 +27,7 @@ form{
 }
     
 .labname{
-    font-size: 40px;
+    font-size: 30px;
     color: var(--tertiary-color);
     justify-content: center;
 }
@@ -53,9 +53,7 @@ form{
     padding: 10px;       
 }
     
-.labname{
-    margin-bottom: 10px;        
-}
+
     
 .lab2 > div{
     display: flex;
@@ -223,9 +221,7 @@ form{
     padding: 10px;
 }
     
-.labname{
-    margin-bottom: 10px;
-}    
+    
 .lab2 > div{
     display: flex;
     align-items: center;  
