@@ -30,6 +30,7 @@ input[type="radio"] {
     display: none;
 }
 
+
 .radiobut {
     width: 30px;
     height: 30px;
@@ -37,7 +38,7 @@ input[type="radio"] {
     background-color: rgb(251, 252, 253);
     border-radius: 50%;
     border: 2px solid black;
-    position: relative;
+    position: relative;   
 }
 
 

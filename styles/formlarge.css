@@ -40,31 +40,26 @@ form{
     display: grid;
     padding: 10px;
     justify-content: center;       
-}
-    
-    
-.lab2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;        
-    margin: 20px 0;
-    padding: 10px;       
-}
-    
-
+}  
     
 .lab2 > div{
     display: flex;
-    align-items: center;        
+    align-items: center;                   
 }
-    
-.lab2 > div > div {
+.lab2 > div > div{
+    justify-content: space-between;    
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2px;
-    margin: 0 45px; 
-} 
+    margin: 0 40px;   
+}
+    
+
+
+.starcent{
+    justify-content: center;
+}
 .labdate{
     justify-content: center;
     position: relative;         
@@ -93,12 +88,14 @@ label{
 .checkp{
     font-size: 25px;       
      margin-bottom: 20px;
+    
 }
 .divcheck{
     display: flex;
     width: 1000px;
     font-size: 25px;
-    justify-content: space-between;       
+    justify-content: space-between;
+           
 }
 
 .lab5{
@@ -218,14 +215,15 @@ form{
     align-items: center;  
      
 }
-    
 .lab2 > div > div{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2px;
     margin: 0 11px; 
-} 
+}
+    
+ 
 
     
 label{

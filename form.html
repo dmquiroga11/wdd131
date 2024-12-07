@@ -30,41 +30,43 @@
                     </select>
                 </div>
                 <div class="lab2">
-                    <div>
+                    
                         <div class="labname"><strong>Overall Rating</strong></div>
-                        <div>
-                            <div class="star">&star;</div>
-                            <input type="radio" name="overall" id="overall1" value="level1" required>
-                            <label for="overall1"><span class="radiobut"></span></label>
+                        <div class="starcent">
+                            <div>
+                                <div class="star">&star;</div>
+                                <input type="radio" name="overall" id="overall1" value="level1" required>
+                                <label for="overall1"><span class="radiobut"></span></label>
+                            </div>
+                            <div>
+                                <div class="star">&star;&star;</div>
+                                <input type="radio" name="overall" id="overall2" value="level2" required>
+                                <label for="overall2"><span class="radiobut"></span></label>
+                            </div>
+                            <div>
+                                <div class="star">&star;&star;&star;</div>
+                                <input type="radio" name="overall" id="overall3" value="level3" required>
+                                <label for="overall3"><span class="radiobut"></span></label>
+                            </div>
+                            <div>
+                                <div class="star">&star;&star;&star;&star;</div>
+                                <input type="radio" name="overall" id="overall4" value="level4" required>
+                                <label for="overall4"><span class="radiobut"></span></label>
+                            </div>
+                            <div> 
+                                <div class="star">&star;&star;&star;&star;&star;</div>
+                                <input type="radio" name="overall" id="overall5" value="level5" required>
+                                <label for="overall5"><span class="radiobut"></span></label>
+                            </div>
                         </div>
-                        <div>
-                            <div class="star">&star;&star;</div>
-                            <input type="radio" name="overall" id="overall2" value="level2" required>
-                            <label for="overall2"><span class="radiobut"></span></label>
-                        </div>
-                        <div>
-                            <div class="star">&star;&star;&star;</div>
-                            <input type="radio" name="overall" id="overall3" value="level3" required>
-                            <label for="overall3"><span class="radiobut"></span></label>
-                        </div>
-                        <div>
-                            <div class="star">&star;&star;&star;&star;</div>
-                            <input type="radio" name="overall" id="overall4" value="level4" required>
-                            <label for="overall4"><span class="radiobut"></span></label>
-                        </div>
-                        <div>
-                            <div class="star">&star;&star;&star;&star;&star;</div>
-                            <input type="radio" name="overall" id="overall5" value="level5" required>
-                            <label for="overall5"><span class="radiobut"></span></label>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="lab3">
-                    <label for="date" class="labname"><strong>Date of Installation</strong></label>
+                    <label for="instdate" class="labname"><strong>Date of Installation</strong></label>
                     <label class="labdate"><input type="date" id="instdate" name="instdate" required></label>
                 </div>
                 <div class="lab4">
-                    <label for="ask" class="labname"><strong>Which features did you find useful in the product?</strong></label>
+                    <div class="labname"><strong>Which features did you find useful in the product?</strong></div>
                     <div class="checkp">(Check all that apply)</div>
                     <div class="divcheck">
                         <label><input type="checkbox" name="durability" value="yes">Durability</label>
@@ -75,7 +77,7 @@
                 </div>
                 <div class="lab5">
                     <div class="optext">
-                        <label for="written" class="labname"><strong>Review</strong></label>
+                        <label for="reviewtext" class="labname"><strong>Review</strong></label>
                         <div class="opcolor">(Optional)</div>
                     </div>
                     <label ><textarea class="text1" name="reviewtext" id="reviewtext"></textarea></label>
@@ -86,7 +88,7 @@
                         <label for="name" class="labname"><strong>Your Name</strong></label>
                         <div class="opcolor">(Optional)</div>  
                     </div>
-                    <label ><input class="text2" type="text" name="name" value=""></label>
+                    <label ><input class="text2" type="text" name="name"  id="name" value=""></label>
                 </div>
 
                 <div class="buttom">
