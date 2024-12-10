@@ -1,0 +1,77 @@
+:root{
+    --primary-color: #01579b;
+    --secondary-color:#f9a825;
+    --tertiary-color:#000000; 
+    --quaternary-color:#ffffff;
+    --fifthy-color:rgb(184, 2, 2);
+    --family-font1:"Roboto", sans-serif;
+}
+.imghead{
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+}
+header{
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 140px;
+    justify-content: space-between;    
+}
+
+/*Se aplica a todos los a*/
+a{
+    text-decoration: none; 
+    
+}
+main{
+    background-color: var(--primary-color);
+    height: 820px;
+    margin-top: 10px;
+    
+}
+main img{
+    display:flex;
+    align-content: center;
+}
+.mainp{
+    font-size: 30px;
+    font-family: var(--family-font1);
+}
+.mainnav{
+    font-family: var(--family-font1);
+    color: var(--quaternary-color);
+    
+}
+.amain{
+    color:var(--quaternary-color);
+    background-color: var(--fifthy-color); 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);      
+    
+}
+.amain:hover{
+    color:var(--secondary-color);
+}
+footer{
+    background-color: var(--secondary-color);
+    height: 110px;
+    color:var(--tertiary-color);
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+}
+footer p{
+    margin-bottom: 0;
+}
+.reference{
+    font-size: 20px;
+    margin-top: 0;
+    color:var(--primary-color);
+    text-decoration:underline ;
+}
+.reference:hover{
+    color:var(--quaternary-color);
+}
+
+
