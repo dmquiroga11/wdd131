@@ -1,35 +1,27 @@
 :root{
     --primary-color: #01579b;
-    --secondary-color:#f9a825;
+    --secondary-color:#ebc107;
     --tertiary-color:#000000; 
     --quaternary-color:#ffffff; 
-    --fifthy-color:rgb(184, 2, 2);
+    --fifthy-color:rgb(239, 7, 7);
     --family-font1:"Roboto", sans-serif;
 }
 
 
 
 @media screen  and (max-width:2000px){
-/* Estos son los los links del header*/
-.aheader{
-    background-color: aquamarine; 
-}
 
-/*se aplica solo a los a del header*/
-
-/*.aheader*/
 .startlink{
     display: flex;
     list-style-type: none;
     margin-bottom: 2px;    
-    width: 700px;
-    
+    width: 700px;    
    
  }
     
 .alink{
     font-size: 22px;
-    color:var(--primary-color);    
+    color:var(--tertiary-color);    
     font-family: var(--family-font1);
     display: flex;   
     padding: 20px; 
@@ -40,7 +32,7 @@
       
 }
 
-/*MENU*/
+
 .open, .close{
     display:none;
 }
@@ -76,7 +68,7 @@ main img{
     text-align: center;
     padding: 20px;
     align-content: center;
-    color: var(--quaternary-color);
+    color: var(--tertiary-color);
     text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 .mainpimg{
@@ -85,7 +77,7 @@ main img{
 }
 
 
-/*PANTALLA MAS CHICA!!!!!!!!!!!!!!!!!!*/
+
 
 @media (max-width: 500px){
     
@@ -137,7 +129,7 @@ body {
 }
 
 .startlink {
-    list-style-type: none; /* Elimina los puntos de la lista */
+    list-style-type: none; 
     padding: 0;
     margin: 0;    
     width: 200px;

@@ -30,6 +30,44 @@ close.addEventListener("click", () => {
             }
         });
     });
+    document.addEventListener('DOMContentLoaded', () => {
+        const options = document.getElementById('options');
+        const checkMostVisitedButton = document.getElementById('checkMostVisited');
+        const mostVisitedResult = document.getElementById('mostVisitedResult');
+    
+        
+        const storedVisits = JSON.parse(localStorage.getItem('visitCounts')) || {
+            facebook: 0,
+            youtube: 0,
+            pinterest: 0,
+            lds_church: 0
+        };
+    
+        const visitCounts = {...storedVisits};
+    
+        options.addEventListener('change', (event) => {
+            if (event.target.value) {
+                visitCounts[event.target.value]++;
+                localStorage.setItem('visitCounts', JSON.stringify(visitCounts));
+            }
+        });
+    
+        checkMostVisitedButton.addEventListener('click', () => {
+            let mostVisited = '';
+            let maxCount = 0;
+    
+            for (const [key, value] of Object.entries(visitCounts)) {
+                if (value > maxCount) {
+                    mostVisited = key;
+                    maxCount = value;
+                }
+            }
+    
+            mostVisitedResult.textContent = `The most visited social media resource is: ${mostVisited}`;
+        });
+    });
+    
+    
     
     
    

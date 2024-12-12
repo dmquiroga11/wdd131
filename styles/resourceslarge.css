@@ -1,19 +1,15 @@
 :root{
     --primary-color: #01579b;
-    --secondary-color:#f9a825;
+    --secondary-color:#ebc107;
     --tertiary-color:#000000; 
-    --quaternary-color:#ffffff; 
-    --fifthy-color:rgb(184, 2, 2);
+    --quaternary-color:#ffffff;
+    --fifthy-color:rgb(239, 7, 7);
+    --sisthy-color:rgb(13, 1, 52);
     --family-font1:"Roboto", sans-serif;
 }
 
-
-
 @media screen  and (max-width:2000px){
 
-/*se aplica solo a los a del header*/
-
-/*.aheader*/
 .startlink{
     display: flex;
     list-style-type: none;
@@ -24,7 +20,7 @@
     
 .alink{
     font-size: 22px;
-    color:var(--quaternary-color);    
+    color:var(--tertiary-color);    
     font-family: var(--family-font1);
     display: flex;   
     padding: 20px; 
@@ -38,7 +34,7 @@ h1{
     font-size: 70px; 
     width: 895px;
     text-align: center;
-    color:var(--fifthy-color);
+    color:var(--sisthy-color);
     font-family: var(--family-font1);
     margin-top: 100px;    
 }
@@ -49,7 +45,7 @@ h1{
 }
 
 .alink:hover{
-    color: var(--secondary-color);
+    color: var(--quaternary-color);
 }
 .choose{    
     margin-top: 100px;
@@ -57,6 +53,24 @@ h1{
 .askoption{
     font-size: 20px;    
     width: 480px;
+}
+.result{
+    
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top:50px;
+    
+}
+.visited{
+    font-size: 25px;
+    position: relative;
+    left:30%;
+    top:50px;  
+   background-color: var(--fifthy-color);
+   color: var(--tertiary-color);
+   padding: 10px;
+
 }
 .imgoption{
     width: 150px;
@@ -134,7 +148,6 @@ h1{
 }
 
 
-/*PANTALLA MAS CHICA!!!!!!!!!!!!!!!!!!*/
 
 @media (max-width: 500px){
     
@@ -155,7 +168,7 @@ body {
     border: 0;
     font-size: 4rem;
     background-color: transparent;
-    color: var(--fifthy-color);       
+    color: var(--tertiary-color);       
 }
 .open{
     display: block;
@@ -165,7 +178,7 @@ body {
     border: 0;
     font-size: 3rem;
     background-color: transparent;
-    color: var(--fifthy-color);
+    color: var(--tertiary-color);
 }
 
 .nav {
@@ -182,12 +195,12 @@ body {
     display: grid;    
     visibility: visible;
     grid-template-columns: 1fr;
-    background-color:var(--primary-color);    
+    background-color:var(--secondary-color);    
     z-index: 1000;     
 }
 
 .startlink {
-    list-style-type: none; /* Elimina los puntos de la lista */
+    list-style-type: none; 
     padding: 0;
     margin: 0;    
     width: 200px;
@@ -197,7 +210,7 @@ body {
 
 
 .alink:hover {
-    color: var(--secondary-color);    
+    color: var(--quaternary-color);    
 }
 
 h1{
@@ -205,7 +218,7 @@ h1{
 }
 main{
     display: grid;
-    height: 900px;
+    height: 1000px;
 }
 main img{
     position: relative;
@@ -218,8 +231,7 @@ main img{
     position: relative;
     top:70px;
 }
-
-    
+   
     footer{
         font-size: 20px;
         height: 100px;
@@ -247,8 +259,7 @@ main img{
         width: 450px;
         position: relative;
         bottom: 80px;
-        -webkit-text-stroke: 1px #000;
-        
+        -webkit-text-stroke: 1px #000;      
         
     }
     .options{
@@ -279,14 +290,25 @@ main img{
         justify-content: center;
         margin-top: 30px;        
         position: relative;
-       bottom:100px;   
-        
+       bottom:100px;        
         
     }
+    .result{
     
-   
-   
-    
-    
+        font-size: 15px;
+        text-align: center;
+        position: relative;
+        top:20px;
+        
+    }
+    .visited{
+        font-size: 18px;
+        position: relative;
+        left:25%;
+        top:20px;  
+       background-color: var(--fifthy-color);
+       color: var(--tertiary-color);
+       padding: 5px;    
+    }  
 
 }

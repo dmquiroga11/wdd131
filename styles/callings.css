@@ -1,37 +1,68 @@
 :root{
     --primary-color: #01579b;
-    --secondary-color:#f9a825;
+    --secondary-color:#ebc107;
     --tertiary-color:#000000; 
     --quaternary-color:#ffffff;
-    --fifthy-color:rgb(184, 2, 2);
+    --fifthy-color:rgb(239, 7, 7);
     --family-font1:"Roboto", sans-serif;
 }
-.imghead{
-    width: 150px;
-    height: 100px;
-    padding: 20px;
+
+
+a:hover{
+    color:var(--primary-color);
 }
-header{
-    display: flex;
-    background-color: var(--secondary-color);
-    height: 140px;
-    justify-content: space-between;    
+.subbox2{
+    width: 400px;
+    text-align: center;  
 }
 
-/*Se aplica a todos los a*/
-a{
-    text-decoration: none; 
+.links1{
+    display: grid;
+    margin-top: 8px;
+  
+   
+}
+.box2{
+    display: flex;
+}
+.personal{
+    justify-self: center;    
+}
+
+
+header img{
+    box-shadow: none;
+}
+img{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.imgmusic,.imgnursery{
+    width: 300px;
+    height: 200px;
+}
+.imgsecre{
+    width: 310px;
+    height: 210px;
     
 }
-main{
-    background-color: var(--fifthy-color);
-    height: 820px;
-    margin-top: 10px;    
+.size{
+    width: 320px;
+    height: 200px;
+}
+.sizeact{
+    width: 320px;
+    height: 210px;
+}
+.sizete{
+    position: relative;
+    bottom: 30px;
+    width: 320px;
+    height: 200px;
 }
 
 
 footer{
-    background-color: var(--secondary-color);
+    background-color:var(--secondary-color);
     height: 110px;
     color:var(--tertiary-color);
     font-size: 30px;
@@ -45,9 +76,11 @@ footer p{
 .reference{
     font-size: 20px;
     margin-top: 0;
-    color:var(--primary-color);
+    color:var(--tertiary-color);
     text-decoration:underline ;
 }
 .reference:hover{
     color:var(--quaternary-color);
 }
+
+

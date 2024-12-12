@@ -1,9 +1,9 @@
 :root{
     --primary-color: #01579b;
-    --secondary-color:#f9a825;
+    --secondary-color:#ebc107;
     --tertiary-color:#000000; 
     --quaternary-color:#ffffff;
-    --fifthy-color:rgb(184, 2, 2);
+    --fifthy-color:rgb(239, 7, 7);
     --family-font1:"Roboto", sans-serif;
 }
 .imghead{
@@ -24,7 +24,7 @@ a{
     
 }
 main{
-    background-color: var(--primary-color);
+   
     height: 820px;
     margin-top: 10px;
     
@@ -33,6 +33,7 @@ main img{
     display:flex;
     align-content: center;
 }
+
 .mainp{
     font-size: 30px;
     font-family: var(--family-font1);
@@ -43,11 +44,10 @@ main img{
     
 }
 .amain{
-    color:var(--quaternary-color);
+    color:var(--tertiary-color);
     background-color: var(--fifthy-color); 
     border-radius: 10px; 
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);      
-    
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);       
 }
 .amain:hover{
     color:var(--secondary-color);
@@ -67,11 +67,11 @@ footer p{
 .reference{
     font-size: 20px;
     margin-top: 0;
-    color:var(--primary-color);
+    color:var(--tertiary-color);
     text-decoration:underline ;
 }
 .reference:hover{
-    color:var(--quaternary-color);
+    color:var(--fifthy-color);
 }
 
 

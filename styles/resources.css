@@ -1,9 +1,10 @@
 :root{
     --primary-color: #01579b;
-    --secondary-color:#f9a825;
+    --secondary-color:#ebc107;
     --tertiary-color:#000000; 
     --quaternary-color:#ffffff;
-    --fifthy-color:rgb(184, 2, 2);
+    --fifthy-color:rgb(239, 7, 7);
+    --sisthy-color:rgb(13, 1, 52);
     --family-font1:"Roboto", sans-serif;
 }
 .imghead{
@@ -13,7 +14,7 @@
 }
 header{
     display: flex;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     height: 140px;
     justify-content: space-between; 
       
@@ -22,13 +23,9 @@ h1{
     text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-/*Se aplica a todos los a*/
 a{
-    text-decoration: none; 
-    
-}
-
-  
+    text-decoration: none;  
+}  
 
 .choose{
     display: grid;
@@ -39,14 +36,14 @@ a{
 }
 
 main{
-    background-color: var(--secondary-color);
+   
     height: 820px;
     margin-top: 10px;
-    display: flex;
-    
+    display: flex;    
 }
+
 footer{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     height: 110px;
     color:var(--tertiary-color);
     font-size: 30px;
@@ -60,7 +57,7 @@ footer p{
 .reference{
     font-size: 20px;
     margin-top: 0;
-    color:var(--primary-color);
+    color:var(--tertiary-color);
     text-decoration:underline ;
 }
 .reference:hover{

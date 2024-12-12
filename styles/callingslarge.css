@@ -1,35 +1,30 @@
 :root{
     --primary-color: #01579b;
-    --secondary-color:#f9a825;
+    --secondary-color:#ebc107;
     --tertiary-color:#000000; 
-    --quaternary-color:#ffffff; 
-    --fifthy-color:rgb(184, 2, 2);
+    --quaternary-color:#ffffff;
+    --fifthy-color:rgb(239, 7, 7);
+    --sisthy-color:rgb(13, 1, 52);
     --family-font1:"Roboto", sans-serif;
 }
 
 
 
 @media screen  and (max-width:2000px){
-/* Estos son los los links del header*/
+
 .aheader{
     background-color: aquamarine; 
 }
-
-/*se aplica solo a los a del header*/
-
-/*.aheader*/
 .startlink{
     display: flex;
     list-style-type: none;
     margin-bottom: 2px;    
-    width: 700px;
-    
-   
+    width: 700px;    
  }
     
 .alink{
     font-size: 22px;
-    color:var(--primary-color);    
+    color:var(--tertiary-color);    
     font-family: var(--family-font1);
     display: flex;   
     padding: 20px; 
@@ -47,12 +42,184 @@
 .alink:hover{
     color: var(--quaternary-color);
 }
+
+.imghead{
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+}
+header{
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 140px;
+    justify-content: space-between;    
+}
+
+header a{
+    text-decoration: none;
+}
+a{
+    color:var(--tertiary-color);    
+    font-size: 25px;
+    font-family: var(--family-font1); 
+    margin:3px;   
+}
+a:hover{
+    color:var(--primary-color);
+}
+h1{
+    font-size: 70px;
+    text-align: center;   
+     margin-top: 5px;
+    color: var(--sisthy-color);
+    position: relative;
+    top: 50px;
+    font-family: var(--family-font1);
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+h2{
+    font-size: 42px;
+    color: var(--sisthy-color);
+    text-align: center;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+}
+.subbox1{
+    display: grid;
+    margin: 50px;
+    text-align: center;
+    
+}
+.subbox2{
+    width: 400px;
+    text-align: center;
+   
+}
+
+.links1{
+    display: grid;
+    margin-top: 8px;
+}
+.box2{
+    display: flex;
+
+}
+.personal{
+    justify-self: center;  
+   
+}
+.personal a{
+    position: relative;
+    left: 20%;
+    position: relative;
+    top: 10px;
+}
+main{
+    
+    height: 2700px;
+       
+}
+header img{
+    box-shadow: none;
+}
+.primlink{
+    position: relative;
+    bottom:40px;
+}
+.tables{
+    display:grid;
+    justify-content: center;
+     margin-top:40px;    
+}
+table{
+    margin: 40px;
+}
+table,th,td{
+    border: 2px solid var(--fifthy-color);
+    border-collapse: collapse;
+}
+caption{
+    font-size: 50px;
+    color: var(--tertiary-color);
+    margin: 5px;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+th{
+    font-size: 30px;
+    padding: 0.5rem;
+    color:var(--sisthy-color);
+    font-family: var(--family-font1);
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+td{
+    font-size:25px ;
+    text-align: center;
+    color: var(--tertiary-color);
+}
+.gallery-item {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {   
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+.captionmodal{
+    font-size: 20px;
+    font-family: var(--family-font1);
+    color: var(--quaternary-color);
+}
 }
 
 
-
-
-/*PANTALLA MAS CHICA!!!!!!!!!!!!!!!!!!*/
+/*SHORT SCREAN!!!!!!!!!!!!!!!!!!*/
 
 @media (max-width: 500px){
     
@@ -100,7 +267,8 @@ body {
     display: grid;    
     visibility: visible;
     grid-template-columns: 1fr;
-    background-color:var(--secondary-color);    
+    background-color:var(--secondary-color);
+    z-index: 1000;     
 }
 
 .startlink {
@@ -115,14 +283,67 @@ body {
 
 li a:hover {
     color: var(--secondary-color);
-}
-
-    main img{
-        width: 100%;        
-    }
+}   
     main{
         background-color: var(--quaternary-color);
+        height: 3400px;
     }
+    h1{
+        font-size: 55px;
+        text-align: center;       
+        color: var(--sisthy-color);      
+        font-family: var(--family-font1);
+        text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);        
+    }
+       
+    h2{
+        font-size: 30px;
+        color: var(--sisthy-color);
+        text-align: center;
+    }
+    .box1{
+        display: grid;
+        justify-content: center;
+      
+    }
+    .subbox1{
+        display: grid;
+        margin: 10px;
+        text-align: center;        
+    }
+    .primlink{
+        position: relative;
+        bottom:20px;
+    }
+    .personal a{
+        position: relative;
+        left:0.5%;
+    }
+    .tables{
+        display:grid;
+        justify-content: center;                 
+    }  
+    
+    caption{
+        font-size: 30px;
+       
+    }
+    th{
+        font-size: 15px;            
+    }
+    td{
+        font-size:15px ;        
+    }
+    .table1{
+        margin-top:0;
+        margin-bottom: 0;
+    }
+    .table2{
+        position: relative;
+        margin-top: 2px;
+ 
+    }
+   
     
     footer{
         font-size: 20px;
@@ -139,10 +360,11 @@ li a:hover {
         padding: 2rem;        
         border: 0;
         font-size: 2.5rem;
-        background-color: transparent;
-               
+        background-color: transparent;              
     }
-
-    
+    .personal img{
+        width: 200px;
+        height: 260px;
+    }   
 
 }
