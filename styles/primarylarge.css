@@ -40,16 +40,15 @@
       
 }
 
-}
+/*MENU*/
 .open, .close{
     display:none;
 }
-
 .alink:hover{
     color: var(--quaternary-color);
 }
 main img{
-    width: auto;
+    width: auto;  
    
 }
 .mainnav{
@@ -82,6 +81,7 @@ main img{
 }
 .mainpimg{
     display: flex;
+}
 }
 
 

@@ -1,0 +1,148 @@
+:root{
+    --primary-color: #01579b;
+    --secondary-color:#f9a825;
+    --tertiary-color:#000000; 
+    --quaternary-color:#ffffff; 
+    --fifthy-color:rgb(184, 2, 2);
+    --family-font1:"Roboto", sans-serif;
+}
+
+
+
+@media screen  and (max-width:2000px){
+/* Estos son los los links del header*/
+.aheader{
+    background-color: aquamarine; 
+}
+
+/*se aplica solo a los a del header*/
+
+/*.aheader*/
+.startlink{
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 2px;    
+    width: 700px;
+    
+   
+ }
+    
+.alink{
+    font-size: 22px;
+    color:var(--primary-color);    
+    font-family: var(--family-font1);
+    display: flex;   
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.5); 
+    margin: 15px; 
+    text-align: center; 
+      
+}
+
+.open, .close{
+    display:none;
+}
+
+.alink:hover{
+    color: var(--quaternary-color);
+}
+}
+
+
+
+
+/*PANTALLA MAS CHICA!!!!!!!!!!!!!!!!!!*/
+
+@media (max-width: 500px){
+    
+
+    /* General styles */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Styles for the menu */
+
+.close {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 0.2rem;        
+    border: 0;
+    font-size: 4rem;
+    background-color: transparent;
+    color: var(--tertiary-color);       
+}
+.open{
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 2rem;        
+    border: 0;
+    font-size: 3rem;
+    background-color: transparent;
+}
+
+.nav {
+    display: none;        
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 200px;        
+    height: auto;
+    background-color: var(--fifth-color);   
+    visibility: hidden;
+}
+
+.nav.visible {
+
+    display: grid;    
+    visibility: visible;
+    grid-template-columns: 1fr;
+    background-color:var(--secondary-color);    
+}
+
+.startlink {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;    
+    width: 200px;
+    display: grid;
+    text-align: center;
+}
+
+
+li a:hover {
+    color: var(--secondary-color);
+}
+
+    main img{
+        width: 100%;        
+    }
+    main{
+        background-color: var(--quaternary-color);
+    }
+    
+    footer{
+        font-size: 20px;
+        height: 100px;
+    }
+    .reference{
+        font-size: 17px;
+    }
+
+    .aheader {
+        display: block;
+        position:absolute;
+        right:0;
+        padding: 2rem;        
+        border: 0;
+        font-size: 2.5rem;
+        background-color: transparent;
+               
+    }
+
+    
+
+}

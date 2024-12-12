@@ -1,0 +1,53 @@
+:root{
+    --primary-color: #01579b;
+    --secondary-color:#f9a825;
+    --tertiary-color:#000000; 
+    --quaternary-color:#ffffff;
+    --fifthy-color:rgb(184, 2, 2);
+    --family-font1:"Roboto", sans-serif;
+}
+.imghead{
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+}
+header{
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 140px;
+    justify-content: space-between;    
+}
+
+/*Se aplica a todos los a*/
+a{
+    text-decoration: none; 
+    
+}
+main{
+    background-color: var(--fifthy-color);
+    height: 820px;
+    margin-top: 10px;    
+}
+
+
+footer{
+    background-color: var(--secondary-color);
+    height: 110px;
+    color:var(--tertiary-color);
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+}
+footer p{
+    margin-bottom: 0;
+}
+.reference{
+    font-size: 20px;
+    margin-top: 0;
+    color:var(--primary-color);
+    text-decoration:underline ;
+}
+.reference:hover{
+    color:var(--quaternary-color);
+}

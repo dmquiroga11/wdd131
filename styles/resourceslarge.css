@@ -1,0 +1,292 @@
+:root{
+    --primary-color: #01579b;
+    --secondary-color:#f9a825;
+    --tertiary-color:#000000; 
+    --quaternary-color:#ffffff; 
+    --fifthy-color:rgb(184, 2, 2);
+    --family-font1:"Roboto", sans-serif;
+}
+
+
+
+@media screen  and (max-width:2000px){
+
+/*se aplica solo a los a del header*/
+
+/*.aheader*/
+.startlink{
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 2px;    
+    width: 700px;    
+   
+ }
+    
+.alink{
+    font-size: 22px;
+    color:var(--quaternary-color);    
+    font-family: var(--family-font1);
+    display: flex;   
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.5); 
+    margin: 15px; 
+    text-align: center;    
+      
+}
+h1{
+    font-size: 70px; 
+    width: 895px;
+    text-align: center;
+    color:var(--fifthy-color);
+    font-family: var(--family-font1);
+    margin-top: 100px;    
+}
+
+
+.open, .close{
+    display:none;
+}
+
+.alink:hover{
+    color: var(--secondary-color);
+}
+.choose{    
+    margin-top: 100px;
+}
+.askoption{
+    font-size: 20px;    
+    width: 480px;
+}
+.imgoption{
+    width: 150px;
+    height: 150px;
+}
+.imgoption1{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    bottom:15px;
+    
+}
+.pinte{
+    position: relative;
+    bottom: 35px;
+}
+.imgoption2{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+   
+}
+.askoption{
+    font-size: 40px;  
+    
+}
+.options{
+    width: 500px;
+    height: 40px;
+    position: relative;
+    left: 15%;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 25px;
+} 
+.links-container .social-links {
+    display: none;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 50px;   
+}
+
+
+
+
+.links-container .social-links ul {
+    list-style-type: none;    
+    padding: 0;
+    margin: 0;
+    
+}
+
+.links-container .social-links ul li {
+    margin-bottom: 10px;    
+    font-size: 30px;
+    
+    
+}
+
+.links-container .social-links ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.links-container .social-links ul li a:hover {
+    color: var(--quaternary-color);
+}
+
+}
+
+
+/*PANTALLA MAS CHICA!!!!!!!!!!!!!!!!!!*/
+
+@media (max-width: 500px){
+    
+
+    /* General styles */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Styles for the menu */
+
+.close {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 0.2rem;        
+    border: 0;
+    font-size: 4rem;
+    background-color: transparent;
+    color: var(--fifthy-color);       
+}
+.open{
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 2rem;        
+    border: 0;
+    font-size: 3rem;
+    background-color: transparent;
+    color: var(--fifthy-color);
+}
+
+.nav {
+    display: none;        
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 200px;        
+    height: auto;      
+    visibility: hidden;
+}
+
+.nav.visible {
+    display: grid;    
+    visibility: visible;
+    grid-template-columns: 1fr;
+    background-color:var(--primary-color);    
+    z-index: 1000;     
+}
+
+.startlink {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;    
+    width: 200px;
+    display: grid;
+    text-align: center;
+}
+
+
+.alink:hover {
+    color: var(--secondary-color);    
+}
+
+h1{
+    display: none;
+}
+main{
+    display: grid;
+    height: 900px;
+}
+main img{
+    position: relative;
+    margin-top: 25px;
+    left:4.5%;
+    box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 0.5); 
+}
+.choose{    
+    margin-top: 20px;
+    position: relative;
+    top:70px;
+}
+
+    
+    footer{
+        font-size: 20px;
+        height: 100px;
+    }
+    .reference{
+        font-size: 17px;
+    }
+
+    .aheader {
+        display: block;
+        position:absolute;
+        right:0;
+        padding: 2rem;        
+        border: 0;
+        font-size: 2.5rem;
+        background-color: transparent;
+               
+    }
+    .imgoption,.imgoption1,.logos{   
+        display: none;
+    }
+    .askoption{
+        font-size: 22px;        
+        justify-content: center;
+        width: 450px;
+        position: relative;
+        bottom: 80px;
+        -webkit-text-stroke: 1px #000;
+        
+        
+    }
+    .options{
+        width: 300px;
+        height: 40px;
+        position: relative;
+        left: 15%;
+        margin: 5px;
+        margin-top: 20px;
+        font-size: 15px;
+        position: relative;
+        bottom: 90px;
+    } 
+    
+    
+    .imgoption2{
+        width: 150px;
+        height: 120px;
+        margin: 30px;
+    }
+    .links-container .social-links ul li {           
+        font-size: 20px;
+       
+    }
+    .links-container .social-links {
+        display: none;
+        align-items: center; 
+        justify-content: center;
+        margin-top: 30px;        
+        position: relative;
+       bottom:100px;   
+        
+        
+    }
+    
+   
+   
+    
+    
+
+}
