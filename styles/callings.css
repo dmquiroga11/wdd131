@@ -82,5 +82,13 @@ footer p{
 .reference:hover{
     color:var(--quaternary-color);
 }
+@keyframes ocult {
+    0% {
+        opacity: 0;    
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 

@@ -31,8 +31,7 @@
    
     .templescont{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
+        grid-template-columns: repeat(3, 1fr);        
         animation: ocult 0.5s forwards;        
     }
     .temple {              

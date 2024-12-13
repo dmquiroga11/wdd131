@@ -85,6 +85,8 @@ footer{
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);    
     gap: 0px;
+    opacity: 0;
+    animation: ocult 0.1s forwards;
 }
 @keyframes ocult {
     0% {
