@@ -142,7 +142,7 @@ h1{
 }
 
 .links-container .social-links ul li a:hover {
-    color: var(--quaternary-color);
+    color: var(--secondary-color);
 }
 
 }
