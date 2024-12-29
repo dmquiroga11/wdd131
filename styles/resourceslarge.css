@@ -45,7 +45,7 @@ h1{
 }
 
 .alink:hover{
-    color: var(--secondary-color);
+    color: var(--quaternary-color);
 }
 .choose{    
     margin-top: 100px;
